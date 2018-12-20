@@ -25,5 +25,8 @@ RUN cd gnucobol-3.0-rc1 && ./configure --without-db && make && make check && mak
 RUN ldconfig
 RUN cobc -V
 RUN export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+RUN sh 'sudo chmod +x comp.sh'
+RUN sh'./comp.sh build --no-daemon'
+
 EXPOSE 8080
 CMD tail -f /dev/null
