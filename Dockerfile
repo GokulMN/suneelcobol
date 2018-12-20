@@ -1,11 +1,9 @@
 <<<<<<< HEAD
 #FROM node:carbon
 =======
->>>>>>> 848aba8f31a977e50835e0bf9d9cad6da37f1ff2
-FROM centos:centos7.5.1804
-MAINTAINER Suneel <sunikulk0208@gmail.com>
-#
 
+FROM centos:centos7.5.1804
+#
 WORKDIR /opt/cobol
 COPY . .
 
